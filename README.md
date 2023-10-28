@@ -13,18 +13,19 @@ import react from "@vitejs/plugin-react"
 export default defineConfig({
     plugins:[react()]
 })
-# Punto de entrada de nuestra aplicación index.html, y busca el archivo main,js
+#### Punto de entrada de nuestra aplicación index.html, y busca el archivo main,js
 
 # Crear archivo App.jsx
 import React from "react";
 const App = () => {
     return (  
-        <h1>Hola mundo</h1>
+        Hola mundo
     );
 }
 export default App;
 
-# Cambiar configuración del main.js y cambiar el tipo de archivo a main.jsx para que pueda transpilar el código
+### Cambiar configuración del main.js y cambiar el tipo de archivo a main.jsx para que pueda transpilar el código
+
 ### Configurar main.jsx
 import {createRoot} from "react-dom/client"
 import App from "./src/App"
